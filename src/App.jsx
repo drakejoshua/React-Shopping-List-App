@@ -12,7 +12,9 @@ function App() {
         <div className="list-item">
           <div>
             {/* insert delete/cancel icon*/} 
-            <BsX className='delete-icon'/>
+            <button className='delete-icon'>
+              <BsX/>
+            </button>
 
             <span className="item-name">
               golden morn
@@ -28,7 +30,9 @@ function App() {
         <div className="list-item">
           <div>
             {/* insert delete/cancel icon*/} 
-            <BsX className='delete-icon'/>
+            <button className='delete-icon'>
+              <BsX/>
+            </button>
 
             <span className="item-name">
               oreos
@@ -44,7 +48,9 @@ function App() {
         <div className="list-item">
           <div>
             {/* insert delete/cancel icon*/} 
-            <BsX className='delete-icon'/>
+            <button className='delete-icon'>
+              <BsX/>
+            </button>
 
             <span className="item-name">
               iPhone XR
