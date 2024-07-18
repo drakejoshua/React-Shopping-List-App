@@ -1,6 +1,9 @@
-import { BsX } from 'react-icons/bs'
+// child components import
+import ListItem from './ListItem';
 
 function App() {
+  
+
   return (
     <div className='app'>
       <h1 className="app-heading">my shopping list</h1>
@@ -9,58 +12,13 @@ function App() {
       <div className="list-ctn">
 
         {/* list item */}
-        <div className="list-item">
-          <div>
-            {/* insert delete/cancel icon*/} 
-            <button className='delete-icon'>
-              <BsX/>
-            </button>
-
-            <span className="item-name">
-              golden morn
-            </span>
-          </div>
-
-          <span className="item-price">
-            $20
-          </span>
-        </div>
+        <ListItem name='golden morn' price={200} handleDelete={()=>{}}/>
 
         {/* list item */}
-        <div className="list-item">
-          <div>
-            {/* insert delete/cancel icon*/} 
-            <button className='delete-icon'>
-              <BsX/>
-            </button>
-
-            <span className="item-name">
-              oreos
-            </span>
-          </div>
-
-          <span className="item-price">
-            $200
-          </span>
-        </div>
+        <ListItem name='coffee pill' price={5} handleDelete={()=>{}}/>
 
         {/* list item */}
-        <div className="list-item">
-          <div>
-            {/* insert delete/cancel icon*/} 
-            <button className='delete-icon'>
-              <BsX/>
-            </button>
-
-            <span className="item-name">
-              iPhone XR
-            </span>
-          </div>
-
-          <span className="item-price">
-            $500
-          </span>
-        </div>
+        <ListItem name='iPhone XR' price={400} handleDelete={()=>{}}/>
       </div>
       
       {/* add item button */}
