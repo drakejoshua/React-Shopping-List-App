@@ -57,12 +57,12 @@ body {
   gap: 0px 10px;
 }
 .delete-icon {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
 .delete-icon > svg {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 
@@ -77,4 +77,23 @@ body {
   margin: auto;
   display: block;
   width: fit-content;
+}
+
+
+
+/* adding micro-interactions and ui-states to */
+/* the app */
+.list-item:hover .delete-icon {
+  display: flex;
+}
+
+@media screen and ( any-hover: none ) {
+  .list-item .delete-icon {
+    display: flex;
+  }
+}
+@media screen and ( any-pointer: none ) {
+  .list-item .delete-icon {
+    display: flex;
+  }
 }
