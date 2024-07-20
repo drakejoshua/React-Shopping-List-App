@@ -1,0 +1,99 @@
+/* reset and general styles */
+* {
+  border: none;
+  outline: none;
+  background-color: unset;
+  padding: 0px;
+  margin: 0px;
+
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+}
+button {
+  cursor: pointer;
+}
+
+
+/* styling the body and app's container */
+body {
+  padding-top: 40px;
+}
+.app {
+  width: 80vw;
+  max-width: 500px;
+  min-width: 350px;
+  margin: auto;
+}
+
+
+/* styling the app's heading */
+.app-heading {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+
+
+/* styling the shopping list */
+.list-ctn {
+  height: 450px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0px;
+}
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: azure;
+  border-radius: 10px;
+}
+.list-item > div {
+  display: flex;
+  align-items: center;
+  gap: 0px 10px;
+}
+.delete-icon {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.delete-icon > svg {
+  font-size: 25px;
+}
+
+
+/* styling the add-item button */
+.add-item-btn {
+  margin-top: 30px;
+  padding: 8px 15px;
+  font-size: 16px;
+  background-color: rgb(25, 99, 236);
+  color: white;
+  border-radius: 8px;
+  margin: auto;
+  display: block;
+  width: fit-content;
+}
+
+
+
+/* adding micro-interactions and ui-states to */
+/* the app */
+.list-item:hover .delete-icon {
+  display: flex;
+}
+
+@media screen and ( any-hover: none ) {
+  .list-item .delete-icon {
+    display: flex;
+  }
+}
+@media screen and ( any-pointer: none ) {
+  .list-item .delete-icon {
+    display: flex;
+  }
+}
