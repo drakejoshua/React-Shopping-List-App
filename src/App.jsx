@@ -44,7 +44,7 @@ function App() {
         }
       )
 
-      return newListItems
+      return [...newListItems]
     } );
   }
 
